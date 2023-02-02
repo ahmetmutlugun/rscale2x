@@ -1,0 +1,24 @@
+[package]
+name = "rust_scale2x"
+version = "0.1.0"
+edition = "2021"
+authors = ["Ahmet Mutlugun"]
+description = "Upscale and save images using the scale2x algorithm."
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+image = "0.24.5"
+clap = { version = "4.0", features = ["derive"] }
+
+[profile.release]
+opt-level = 3
+debug = false
+strip = "debuginfo"
+debug-assertions = false
+overflow-checks = true
+lto = true
+panic = 'abort'
+incremental = false
+rpath = false
+codegen-units = 1
+
