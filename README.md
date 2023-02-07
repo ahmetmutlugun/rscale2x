@@ -2,7 +2,7 @@
 ## Installation
 ### From releases
 ####Linux/MacOS
-Download the rust2x binary from the releases page. Run the binary locally using `rust2x`. To use the binary system wide, place it in `/usr/local/bin` or `$HOME/bin`.
+Download the rust2x binary from the releases page. Run the binary locally using `rust2x`. To use the binary system-wide, place it in `/usr/local/bin` or `$HOME/bin`.
 ####Windows
 Build from source
 ### From source
@@ -29,14 +29,13 @@ Options:
 ###Performance
 
 ####Speed
-The time elapsed was recorded in seconds by running each binary 100 times through the command line with `/usr/bin/time -hl`. Times were recorded on an M1 Pro Macbook Pro (8 cores 8 threads) and a Ryzen 5 5600 (6 cores 12 threads).
-
+Execution times were recorded using the 8-Core M1 Pro chip.
 
 | | Rust2x  | Scale2x |
 | ------------- | ------------- | ------------- |
 | tree.png (3741x2494) | 3.9s  | 4.5s  |
 | duck.png (16x15) | 0.00373s | 0.00343s  |
-| lenna.png (512x512) | 0.114 | 0.122  |
+
 ###Dependencies:
 - [Rust and Cargo](http://rust-lang.org/)
 - [Image](https://docs.rs/image/0.24.5/image/)
