@@ -56,10 +56,10 @@ fn main() {
     }
 
     // img = img.filter3x3(&[0.0, 0.0, 0.0, 0.0, 1.0, 0.4375, 0.1875, 0.3125, 0.0625]);
-    scale2x(img).save(output_path).unwrap();
+    rscale2x(img).save(output_path).unwrap();
 }
 
-fn scale2x(img: DynamicImage) -> DynamicImage{
+fn rscale2x(img: DynamicImage) -> DynamicImage{
 
     //Set width and height
     let width = img.dimensions().0;

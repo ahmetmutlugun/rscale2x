@@ -1,4 +1,4 @@
-# Rust2x
+# rscale2x
 
 ## Installation
 
@@ -6,7 +6,7 @@
 
 #### Linux/MacOS
 
-Download the rust2x binary from the releases page. Run the binary locally using `rust2x`. To use the binary system-wide,
+Download the rscale2x binary from the releases page. Run the binary locally using `rscale2x`. To use the binary system-wide,
 place it in `/usr/local/bin` or `$HOME/bin`.
 
 #### Windows
@@ -48,10 +48,10 @@ Options:
 
 Execution times were recorded using the 8-Core M1 Pro chip.
 
-| | Rust2x  | Scale2x |
+| | rscale2x  | scale2x |
 | ------------- | ------------- | ------------- |
 | tree.png (3741x2494) | 3.9s  | 4.5s  |
-| duck.png (16x15) | 0.00373s | 0.00343s  |
+| grid.png (32x32) | 0.00186s | 0.00153s  |
 
 ### Dependencies:
 
@@ -61,5 +61,4 @@ Execution times were recorded using the 8-Core M1 Pro chip.
 
 ### Credits:
 
-tree.png: [Unsplash](https://unsplash.com/photos/tGTVxeOr_Rs)  
-duck.png: [Stardew Valley](https://www.stardewvalley.net)
+tree.png: [Unsplash](https://unsplash.com/photos/tGTVxeOr_Rs)

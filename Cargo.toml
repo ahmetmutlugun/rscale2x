@@ -1,5 +1,5 @@
 [package]
-name = "scale2x"
+name = "rscale2x"
 version = "0.1.0"
 edition = "2021"
 authors = ["Ahmet Mutlugun"]
