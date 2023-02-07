@@ -41,6 +41,7 @@ fn main() {
     let sharpen: f32 = args.unsharpen;
     let hue: i32 = args.hue;
     let output_path = args.output;
+
     //Open image
     let mut img = image::open(args.input).unwrap();
 
@@ -54,7 +55,7 @@ fn main() {
         img = img.huerotate(hue);
     }
 
-    img = img.filter3x3(&[0.0, 0.0, 0.0, 0.0, 1.0, 0.4375, 0.1875, 0.3125, 0.0625]);
+    // img = img.filter3x3(&[0.0, 0.0, 0.0, 0.0, 1.0, 0.4375, 0.1875, 0.3125, 0.0625]);
     scale2x(img).save(output_path).unwrap();
 }
 

@@ -32,19 +32,15 @@ Options:
 The time elapsed was recorded in seconds by running each binary 100 times through the command line with `/usr/bin/time -hl`. Times were recorded on an M1 Pro Macbook Pro (8 cores 8 threads) and a Ryzen 5 5600 (6 cores 12 threads).
 
 
-| | Rust2x  | Scale2x | Swift2x |
-| ------------- | ------------- | ------------- | ------------- |
-| tree.png (3741x2494) | x  | x  | x |
-| duck.png (16x15) | x  | x  | x |
-####Memory
-| | Rust2x  | Scale2x | Swift2x |
-| ------------- | ------------- | ------------- | ------------- |
-| tree.png (3741x2494) | x  | x  | x |
-| duck.png (16x15) | x  | x  | x |
+| | Rust2x  | Scale2x |
+| ------------- | ------------- | ------------- |
+| tree.png (3741x2494) | 3.9s  | 4.5s  |
+| duck.png (16x15) | 0.00373s | 0.00343s  |
+| lenna.png (512x512) | 0.114 | 0.122  |
 ###Dependencies:
 - [Rust and Cargo](http://rust-lang.org/)
 - [Image](https://docs.rs/image/0.24.5/image/)
 - [Clap](https://docs.rs/clap/4.1.4/clap/)
 ###Credits:
 tree.png: [Unsplash](https://unsplash.com/photos/tGTVxeOr_Rs)  
-duck.png: [Stardew Valley](https://stardewvalleywiki.com)
+duck.png: [Stardew Valley](https://www.stardewvalley.net)
