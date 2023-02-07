@@ -1,16 +1,31 @@
 # Rust2x
+
 ## Installation
+
 ### From releases
-####Linux/MacOS
-Download the rust2x binary from the releases page. Run the binary locally using `rust2x`. To use the binary system-wide, place it in `/usr/local/bin` or `$HOME/bin`.
-####Windows
+
+#### Linux/MacOS
+
+Download the rust2x binary from the releases page. Run the binary locally using `rust2x`. To use the binary system-wide,
+place it in `/usr/local/bin` or `$HOME/bin`.
+
+#### Windows
+
 Build from source
+
 ### From source
-####1. Install Dependencies
-[Install](https://doc.rust-lang.org/cargo/getting-started/installation.html) cargo and rust. 
-####2. Building
-Download the source of the project, then run ```cargo build --release``` in the directory to generate the binary in `./target/release/`
+
+#### 1. Install Dependencies
+
+[Install](https://doc.rust-lang.org/cargo/getting-started/installation.html) cargo and rust.
+
+#### 2. Building
+
+Download the source of the project, then run ```cargo build --release``` in the directory to generate the binary
+in `./target/release/`
+
 ## Usage
+
 ```
 Upscale and save images using the scale2x algorithm.
 
@@ -26,9 +41,11 @@ Options:
   -V, --version                Print version information
 
 ```
-###Performance
 
-####Speed
+### Performance
+
+#### Speed
+
 Execution times were recorded using the 8-Core M1 Pro chip.
 
 | | Rust2x  | Scale2x |
@@ -36,10 +53,13 @@ Execution times were recorded using the 8-Core M1 Pro chip.
 | tree.png (3741x2494) | 3.9s  | 4.5s  |
 | duck.png (16x15) | 0.00373s | 0.00343s  |
 
-###Dependencies:
+### Dependencies:
+
 - [Rust and Cargo](http://rust-lang.org/)
 - [Image](https://docs.rs/image/0.24.5/image/)
 - [Clap](https://docs.rs/clap/4.1.4/clap/)
-###Credits:
+
+### Credits:
+
 tree.png: [Unsplash](https://unsplash.com/photos/tGTVxeOr_Rs)  
 duck.png: [Stardew Valley](https://www.stardewvalley.net)
